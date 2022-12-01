@@ -17,5 +17,5 @@ edition = "2018"
 name = "day1"
 path = "soln.rs"
 
-[dependencies]
-aoc = { path = "../libaoc" }
+[dependencies.aoc]
+workspace = true
