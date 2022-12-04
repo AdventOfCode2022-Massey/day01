@@ -39,7 +39,7 @@ fn main() {
         Part2 => {
             sums.sort();
             let n = sums.len();
-            let max_sum = sums[n-3..].into_iter().sum::<u64>();
+            let max_sum = sums[n-3..].iter().sum::<u64>();
             println!("{max_sum}");
         }
     }
