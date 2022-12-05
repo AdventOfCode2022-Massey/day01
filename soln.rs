@@ -8,6 +8,9 @@
 use aoc::*;
 
 fn main() {
+    // Pile the input up into a `Vec` of group sums (`u64`).
+    // Make sure to pick up the last group if the input does
+    // not end with a blank line.
     let mut sums = vec![];
     let mut sum = 0u64;
     for line in input_lines() {
@@ -27,6 +30,7 @@ fn main() {
 
     match get_part() {
         Part1 => {
+            // Simply find the maximum group sum.
             if let Some(max_sum) = sums.into_iter().max() {
                 println!("{max_sum}");
             } else {
@@ -34,6 +38,9 @@ fn main() {
             }
         }
         Part2 => {
+            // Sort the group sums and take the sum of the
+            // last three. Another way would be to use
+            // `.rev()` and `.take(3)`.
             sums.sort();
             let n = sums.len();
             let max_sum = sums[n - 3..].iter().sum::<u64>();

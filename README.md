@@ -1,9 +1,11 @@
 # Advent of Code 2022: Day 1
-Bart Massey
+Ben and Bart Massey
 
 ---
 
-*Your notes here.*
+For the first problem of advent, the input processing is
+surprisingly annoying. Ben wrote most of this solution,
+which does some simple imperative processing.
 
 ---
 
