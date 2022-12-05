@@ -18,4 +18,5 @@ name = "day01"
 path = "soln.rs"
 
 [dependencies.aoc]
-workspace = true
+version = "0.2"
+git = "https://github.com/BartMassey/libaoc"
